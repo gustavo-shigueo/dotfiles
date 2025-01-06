@@ -13,6 +13,10 @@ These files also include settings for other programs, like:
 - Starship
 - Fish
 - Cargo
+- Eza
+- Gitui
+
+And others. Make sure to install these programs and check their docs
 
 ## Reference:
 

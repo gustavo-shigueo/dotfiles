@@ -15,3 +15,4 @@
 "zellij 0.40.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["zellij"]
 "zoxide 0.9.6 (registry+https://github.com/rust-lang/crates.io-index)" = ["zoxide"]
 "cargo-msrv 0.16.3 (registry+https://github.com/rust-lang/crates.io-index)" = ["cargo-msrv"]
+"eza 0.20.15 (registry+https://github.com/rust-lang/crates.io-index)" = ["eza"]
