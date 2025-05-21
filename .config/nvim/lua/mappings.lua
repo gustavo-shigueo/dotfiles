@@ -28,3 +28,4 @@ map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move highlighted text down" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move highlighted text up" })
 map("x", "P", "\"_dP", { desc = "Paste over selection without overwriting copy buffer" })
 
+map("n", "<leader>lf", ":lua vim.diagnostic.open_float(nil, {focus=true, scope=\"cursor\"})<CR>", { desc = "Show diagnostics" })
