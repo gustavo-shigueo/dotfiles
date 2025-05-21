@@ -1,0 +1,10 @@
+[user]
+	name = gustavo-shigueo
+	email = 58121396+gustavo-shigueo@users.noreply.github.com
+[core]
+	editor = nvim
+[alias]
+  cfg = config --global --edit
+  b = branch -a
+  amend = commit --amend --no-edit -a
+  graph = log --oneline --graph --color
