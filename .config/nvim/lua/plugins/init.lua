@@ -43,6 +43,7 @@ return {
         "js-debug-adapter",
         "codelldb",
         "clangd",
+        "biome",
       }
     }
   },

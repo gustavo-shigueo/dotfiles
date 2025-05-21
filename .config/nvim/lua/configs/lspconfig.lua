@@ -8,9 +8,10 @@ local servers = {
   "html",
   "cssls",
   "eslint",
-  "typescript-language-server",
+  "ts_ls",
   "rust_analyzer",
   "clangd",
+  "biome",
 }
 
 local nvlsp = require "nvchad.configs.lspconfig"
