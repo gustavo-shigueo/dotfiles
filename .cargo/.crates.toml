@@ -12,6 +12,7 @@
 "irust 1.71.27 (registry+https://github.com/rust-lang/crates.io-index)" = ["irust"]
 "kanata 1.6.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["kanata"]
 "mprocs 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["mprocs"]
+"nu 0.104.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["nu"]
 "ripgrep 14.1.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["rg"]
 "sccache 0.8.2 (registry+https://github.com/rust-lang/crates.io-index)" = ["sccache"]
 "sqlx-cli 0.8.5 (registry+https://github.com/rust-lang/crates.io-index)" = [
@@ -21,5 +22,6 @@
 "starship 1.21.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["starship"]
 "ts-rs-cli 0.1.0 (path+file:///home/gustavo/projects/ts-rs/cli)" = ["ts-rs"]
 "zellij 0.40.1 (registry+https://github.com/rust-lang/crates.io-index)" = ["zellij"]
-"zoxide 0.9.6 (registry+https://github.com/rust-lang/crates.io-index)" = ["zoxide"]
-"nu 0.104.0 (registry+https://github.com/rust-lang/crates.io-index)" = ["nu"]
+"zoxide 0.9.7 (registry+https://github.com/rust-lang/crates.io-index)" = ["zoxide"]
+"yazi-cli 25.4.8 (registry+https://github.com/rust-lang/crates.io-index)" = ["ya"]
+"yazi-fm 25.4.8 (registry+https://github.com/rust-lang/crates.io-index)" = ["yazi"]
