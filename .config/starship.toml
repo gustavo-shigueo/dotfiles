@@ -16,7 +16,7 @@ palette = 'catppuccin_mocha'
 
 [directory]
 style = "bg:transparent fg:blue"
-format = "[$path ]($style)"
+format = "[$path]($style)"
 truncation_length = 0
 truncation_symbol = "…/"
 truncate_to_repo = false
