@@ -9,7 +9,7 @@ $fill\
 $cmd_duration\
 $time\
 $line_break\
-$character
+$character\
 """
 continuation_prompt = """[❯❯ ](bold fg:magenta)"""
 
