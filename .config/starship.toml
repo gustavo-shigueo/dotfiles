@@ -6,7 +6,6 @@ $git_branch\
 $git_commit\
 $git_status\
 $fill\
-$cmd_duration\
 $time\
 $line_break\
 $character\
@@ -58,13 +57,6 @@ vimcmd_symbol = '[❮](bold fg:magenta)'
 vimcmd_replace_one_symbol = '[❮](bold fg:magenta)'
 vimcmd_replace_symbol = '[❮](bold fg:magenta)'
 vimcmd_visual_symbol = '[❮](bold fg:yellow)'
-
-[cmd_duration]
-show_milliseconds = true
-format = "[$duration]($style) "
-style = "fg:yellow"
-disabled = false
-min_time = 5000
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
