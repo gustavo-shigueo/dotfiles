@@ -1,7 +1,12 @@
 return {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+
+  {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -14,11 +19,11 @@ return {
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
         "c",
-  			"vim",
+        "vim",
         "lua",
         "vimdoc",
         "html",
@@ -27,8 +32,8 @@ return {
         "typescript",
         "tsx",
         "rust",
-  		},
-  	},
+      },
+    },
   },
 
   {
@@ -44,8 +49,8 @@ return {
         "codelldb",
         "clangd",
         "biome",
-      }
-    }
+      },
+    },
   },
 
   {
@@ -55,60 +60,60 @@ return {
       "williamboman/mason.nvim",
       "mfussenegger/nvim-dap",
     },
-    opts = { handlers = {} }
+    opts = { handlers = {} },
   },
 
   {
     "mfussenegger/nvim-dap",
-    config = function ()
+    config = function()
       require "configs.dap"
-    end
+    end,
   },
 
   {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
     dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
-    config = function ()
-      local dap = require("dap")
-      local dapui = require("dapui")
+    config = function()
+      local dap = require "dap"
+      local dapui = require "dapui"
 
       dapui.setup()
 
-      dap.listeners.after.event_initialized["dapui_config"] = function ()
+      dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open()
       end
 
-      dap.listeners.before.event_terminated["dapui_config"] = function ()
+      dap.listeners.before.event_terminated["dapui_config"] = function()
         dapui.close()
       end
 
-      dap.listeners.before.event_exited["dapui_config"] = function ()
+      dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
-    end
+    end,
   },
 
   {
     "rust-lang/rust.vim",
     ft = "rust",
-    init = function ()
+    init = function()
       vim.g.rustfmt_autosave = 1
-    end
+    end,
   },
 
   {
     "saecki/crates.nvim",
     ft = { "rust", "toml" },
-    config = function (_, opts)
-      local crates = require("crates")
+    config = function(_, opts)
+      local crates = require "crates"
       crates.setup(opts)
       crates.show()
-    end
+    end,
   },
 
   {
     "kevinhwang91/nvim-ufo",
     dependencies = { "kevinhwang91/promise-async" },
-  }
+  },
 }
