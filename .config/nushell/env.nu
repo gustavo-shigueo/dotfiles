@@ -26,7 +26,6 @@ $env.TRANSIENT_PROMPT_COMMAND_RIGHT = ^starship module time
 $env.config.buffer_editor = "nvim"
 
 $env.path ++= [
-  "/home/gustavo/.nix-profile/bin",
   "/nix/var/nix/profiles/default/bin",
   "/home/gustavo/.nvm/versions/node/v20.18.0/bin",
   "/home/gustavo/.cargo/bin",
