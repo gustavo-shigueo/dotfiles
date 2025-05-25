@@ -1,4 +1,4 @@
 theme = catppuccin-mocha
 font-size = 16
 maximize = true
-command = /usr/bin/nu
+command = nu
