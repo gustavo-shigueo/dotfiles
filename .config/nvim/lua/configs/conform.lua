@@ -1,10 +1,10 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "biome" },
-    html = { "biome" },
-    javascript = { "biome" },
-    typescript = { "biome" },
+    css = { "biome", "prettierd" },
+    html = { "biome", "prettierd" },
+    javascript = { "biome", "prettierd" },
+    typescript = { "biome", "prettierd" },
   },
 
   format_on_save = {
