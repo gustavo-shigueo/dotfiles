@@ -11,9 +11,12 @@ To properly setup the dotfiles on your system, you must install the following:
 These files also include settings for other programs, like:
 - Kanata
 - Starship
-- Fish
 - Cargo
 - Eza
+- Gitui
+- Ghostty
+- Tmux
+- Nushell
 - Gitui
 
 And others. Make sure to install these programs and check their docs
