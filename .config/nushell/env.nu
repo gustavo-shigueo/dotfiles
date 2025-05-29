@@ -32,6 +32,7 @@ $env.config.edit_mode = "vi"
 $env.config.cursor_shape = {
   vi_insert: line
   vi_normal: block
+}
 
 $env.path ++= [
   "/nix/var/nix/profiles/default/bin",
@@ -48,5 +49,20 @@ $env.path ++= [
   "/snap/bin",
   "/opt/nvim-linux64/bin"
 ]
+
+load-env (fnm env --shell bash
+    | lines
+    | str replace 'export ' ''
+    | str replace -a '"' ''
+    | split column "="
+    | rename name value
+    | where name != "FNM_ARCH" and name != "PATH"
+    | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value }
+)
+
+$env.PATH = ($env.PATH
+    | split row (char esep)
+    | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
+)
 
 zoxide init nushell --cmd cd | save -f ~/.zoxide.nu
