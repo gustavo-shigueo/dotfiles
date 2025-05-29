@@ -17,13 +17,21 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
+$env.PROMPT_INDICATOR_VI_INSERT = ""
+$env.PROMPT_INDICATOR_VI_NORMAL = ""
+
 $env.TRANSIENT_PROMPT_COMMAND = "❯ "
 $env.TRANSIENT_PROMPT_INDICATOR = ""
 $env.TRANSIENT_PROMPT_INDICATOR_VI_INSERT = ""
 $env.TRANSIENT_PROMPT_INDICATOR_VI_NORMAL = ""
 $env.TRANSIENT_PROMPT_MULTILINE_INDICATOR = ""
 $env.TRANSIENT_PROMPT_COMMAND_RIGHT = ^starship module time
+
 $env.config.buffer_editor = "nvim"
+$env.config.edit_mode = "vi"
+$env.config.cursor_shape = {
+  vi_insert: line
+  vi_normal: block
 
 $env.path ++= [
   "/nix/var/nix/profiles/default/bin",
