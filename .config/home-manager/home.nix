@@ -32,7 +32,6 @@
     starship
     gitui
     gcc
-    fnm
     bat
   ];
 
