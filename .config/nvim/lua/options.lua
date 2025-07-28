@@ -14,3 +14,4 @@ o.scrolloff = 8
 o.relativenumber = true
 o.smartindent = true
 o.updatetime = 50
+o.winborder = "rounded"
