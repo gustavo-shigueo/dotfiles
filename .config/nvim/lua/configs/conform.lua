@@ -5,6 +5,8 @@ local options = {
     html = { "biome", "prettierd" },
     javascript = { "biome", "prettierd" },
     typescript = { "biome", "prettierd" },
+    typescriptreact = { "biome", "prettierd" },
+    javascriptreact = { "biome", "prettierd" },
   },
 
   format_on_save = {
