@@ -116,4 +116,24 @@ return {
     "kevinhwang91/nvim-ufo",
     dependencies = { "kevinhwang91/promise-async" },
   },
+
+  {
+
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    cmd = "Telescope",
+    opts = function()
+      return require "configs.telescope"
+    end,
+    config = function(_, opts)
+      require("telescope").setup(opts)
+      require("telescope").load_extension "fzf"
+    end,
+  },
+
+  {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    build = "make",
+  },
 }
