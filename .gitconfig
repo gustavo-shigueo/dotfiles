@@ -8,3 +8,5 @@
   b = branch -a
   amend = commit --amend --no-edit -a
   graph = log --oneline --graph --color
+[push]
+	autoSetupRemote = true
