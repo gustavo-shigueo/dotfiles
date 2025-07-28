@@ -91,7 +91,7 @@ faded = "#6c6c6c"
 when = true
 shell = ["nu", "-c"]
 command = '''
-echo "\u{1b}[B"
+ansi cursor_up
 ''' 
 unsafe_no_escape = true
 format = "$output"
